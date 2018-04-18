@@ -92,10 +92,6 @@ public class MenuView extends ViewGroup {
     }
 
     void ensureView() {
-        if (mainMenu == null) {
-            mainMenu = new MainMenuView(getContext());
-            addView(mainMenu, generateDefaultLayoutParams());
-        }
         if (subLeftMenu1 == null) {
             subLeftMenu1 = new SubMenuView(getContext());
             addView(subLeftMenu1, generateDefaultLayoutParams());
@@ -111,6 +107,10 @@ public class MenuView extends ViewGroup {
         if (subRightMenu2 == null) {
             subRightMenu2 = new SubMenuView(getContext());
             addView(subRightMenu2, generateDefaultLayoutParams());
+        }
+        if (mainMenu == null) {
+            mainMenu = new MainMenuView(getContext());
+            addView(mainMenu, generateDefaultLayoutParams());
         }
     }
 

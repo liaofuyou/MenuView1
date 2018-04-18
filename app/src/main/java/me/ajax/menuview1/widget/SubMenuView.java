@@ -80,7 +80,7 @@ public class SubMenuView extends View {
         canvas.translate(mWidth / 2, mHeight / 2);
 
         canvas.drawCircle(0, 0, mHeight / 2 * percent, mPaint);
-        canvas.drawBitmap(mBitmap, -dp2Dx(10), -dp2Dx(10), mPaint);
+        //canvas.drawBitmap(mBitmap, -dp2Dx(10), -dp2Dx(10), mPaint);
 
         canvas.restore();
     }
